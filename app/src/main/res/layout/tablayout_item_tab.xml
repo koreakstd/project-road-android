@@ -1,0 +1,36 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="koreak.projectroad.tablayout.viewmodel.ItemTabViewModel"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:onClick="@{()->viewModel.onTabClick()}"
+        android:background="?attr/selectableItemBackground"
+        android:animateLayoutChanges="true">
+
+        <ImageView
+            android:id="@+id/tabIcon"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            app:tabIcon="@{viewModel.icon}"/>
+
+        <TextView
+            android:id="@+id/tabTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@{viewModel.tabColor}"
+            android:text="@{viewModel.title}"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</layout>

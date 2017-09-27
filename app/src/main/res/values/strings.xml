@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Project Road</string>
+
+    <string name="label_main_type_your_destination">Type your destination</string>
+    <string name="label_main_where">Where do you want to go?</string>
+    <string name="label_main_most_visited">Here are some most visited place</string>
+    <string name="label_main_card_from">From</string>
+</resources>
